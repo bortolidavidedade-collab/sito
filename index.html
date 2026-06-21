@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stile.css">
     <link rel="stylesheet" href="funzionis.js">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="letter-d.png">
     <title>Davide Bortoli</title>
 </head>
 <body>
@@ -16,10 +16,29 @@
        <a href="#Certificazioni section" id="Certificazioni" class="nav-item">Certificazioni</a>
        <a href="#Contatti section" id="Contatti" class="nav-item">Contatti</a>       
    </nav>
-    <img src="Immagine profilo.png" alt="Immagine profilo">
-   
+    <div class="contact_box">
+        <img src="Immagine profilo.png" alt="Immagine profilo">
+        <div class="central_text">
+            <h1>
+            Davide Bortoli
+            </h1>
+            <p>
+                Via Monte Pasubio, 124, Dueville (VI), 36031, Italia
+            </p>
+            <p>
+                338 8370076 
+            </p>
+            <p>
+                bortolidavide.dade@gmail.com 
+            </p>
+            <p>
+                Sesso Maschile | Data di nascita 27/09/2003 | Nazionalità Italiana 
+            </p>
+        </div>
+    </div>
+    <hr>
     <section id="Aboute me section">
-        <h1>About me:</h1>
+        <h2>About me:</h2>
         <p>
             Sono un giovane appassionato di informatica che ama mettersi in gioco e crescere attraverso il lavoro di squadra. Credo nella collaborazione come motore di innovazione e nel continuo apprendimento come chiave per migliorarsi ogni giorno.
             Ho un forte interesse per l’intelligenza artificiale e le sue applicazioni pratiche, e mi impegno a trasformare la mia curiosità in competenze concrete, contribuendo in modo attivo ai progetti e agli obiettivi del team.
@@ -27,7 +46,7 @@
         <hr>
     </section>
     <section id="Esperienze section">
-        <h1>Esperienze lavorative</h1>
+        <h2>Esperienze lavorative</h2>
         <p>
             Sono un giovane appassionato di informatica che ama mettersi in gioco e crescere attraverso il lavoro di squadra. Credo nella collaborazione come motore di innovazione e nel continuo apprendimento come chiave per migliorarsi ogni giorno.
             Ho un forte interesse per l’intelligenza artificiale e le sue applicazioni pratiche, e mi impegno a trasformare la mia curiosità in competenze concrete, contribuendo in modo attivo ai progetti e agli obiettivi del team.
@@ -35,7 +54,7 @@
         <hr>
     </section>
     <section id="Istruzione section">
-        <h1>Istruzione</h1>
+        <h2>Istruzione</h2>
         <pre>
             2022 - 2026	LAUREA
             Università degli studi di PADOVA Dipartimento di Ingegneria dell’Informazione, PADOVA (PD) 
@@ -52,18 +71,28 @@
         <hr>
     </section>
     <section id="Certificazioni section">
-        <h1>Certificazioni</h1>
+        <h2>Certificazioni</h2>
         <p>
             Sono un giovane appassionato di informatica che ama mettersi in gioco e crescere attraverso il lavoro di squadra. Credo nella collaborazione come motore di innovazione e nel continuo apprendimento come chiave per migliorarsi ogni giorno.
             Ho un forte interesse per l’intelligenza artificiale e le sue applicazioni pratiche, e mi impegno a trasformare la mia curiosità in competenze concrete, contribuendo in modo attivo ai progetti e agli obiettivi del team.
         </p>
     </section>
     <section id="Contatti section">
-        <h1>Contatti</h1>
+        <h2>Contatti</h2>
         <p>
             Sono un giovane appassionato di informatica che ama mettersi in gioco e crescere attraverso il lavoro di squadra. Credo nella collaborazione come motore di innovazione e nel continuo apprendimento come chiave per migliorarsi ogni giorno.
             Ho un forte interesse per l’intelligenza artificiale e le sue applicazioni pratiche, e mi impegno a trasformare la mia curiosità in competenze concrete, contribuendo in modo attivo ai progetti e agli obiettivi del team.
         </p>
     </section>
 </body>
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+        document.getElementsByClassName("navbar").style.padding = "30px 10px";
+    else
+        document.getElementsByClassName("navbar").style.padding = "80px 10px";
+    }
+</script>
 </html>
