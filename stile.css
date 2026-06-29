@@ -79,3 +79,11 @@ img{
 pre{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.exp_section div{
+  padding-left: 50px;
+}
+
+.istr_section div{
+  padding-left: 50px;
+}
