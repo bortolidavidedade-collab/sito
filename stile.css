@@ -4,14 +4,19 @@ body{
 }
 
 .contact_box{
-    display: flex;
-    align-items: center;    
-    gap: 20px;                
-    padding: 20px;
-    max-width: 700px;
+  display: flex;
+  align-items: center;    
+  gap: 20px;                
+  padding-top: 60px;
+  max-width: 700px;
 }
 
-.contact_box img{
+.download_img{
+  height: 50px;
+  width: 50px;
+}
+
+.profile_img{
   float: left;
   height: 300px;
   width: 300px;
@@ -22,7 +27,6 @@ body{
 .central_text{
   justify-content: center;
   align-items: center;
-  
 }
 
 .navbar {
@@ -88,6 +92,6 @@ body{
 }
 
 .cert_section img{
-  height: 15%;
-  width: 15%;
+  height: 200px;
+  width: 200px;
 }
