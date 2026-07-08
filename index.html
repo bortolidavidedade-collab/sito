@@ -240,17 +240,46 @@
         </div>
         <hr>
     </section>
-    <section id="Contatti section">
+    <section id="Contatti section" class="cont_section">
         <h2>Contatti</h2>
-        <p>
-            Sono un giovane appassionato di informatica che ama mettersi in gioco e crescere attraverso il lavoro di squadra. Credo nella collaborazione come motore di innovazione e nel continuo apprendimento come chiave per migliorarsi ogni giorno.
-            Ho un forte interesse per l’intelligenza artificiale e le sue applicazioni pratiche, e mi impegno a trasformare la mia curiosità in competenze concrete, contribuendo in modo attivo ai progetti e agli obiettivi del team.
-        </p>
+            <a href="https://linkedin.com/in/davide-bortoli-37a696342" alt="linkedin">
+                <img src="Images/linkedin.png">
+            </a>
+            <a href="https://t.me/Pegaso12345Bot">
+                <img src="Images/telegram.png" alt="bot telegram">
+            </a>
     </section>
 </body>
 <script>
+    const AboutMeText=document.getElementById("About me");
+    const EsperienzeText=document.getElementById("Esperienze");
+    const IstruzioneText=document.getElementById("Istruzione");
+    const CertificazioniText=document.getElementById("Certificazioni");
+    const ContattiText=document.getElementById("Contatti");
+    
+    const mediaQuery=window.matchMedia("(max-width: 580px)");
+    
     window.onscroll = function() {scrollFunction()};
 
+    function modifyText(e){
+        if(e.matches){
+            AboutMeText.innerHTML="Abt. me"
+            EsperienzeText.innerHTML="Exp."
+            IstruzioneText.innerHTML="Istr."
+            CertificazioniText.innerHTML="Cert."
+            ContattiText.innerHTML="Cont."
+        }
+        else{
+            AboutMeText.innerHTML="About me"
+            EsperienzeText.innerHTML="Esperienze"
+            IstruzioneText.innerHTML="Istruzione"
+            CertificazioniText.innerHTML="Certificazioni"
+            ContattiText.innerHTML="Contatti"
+        }
+    }
+
+    modifyText(mediaQuery);
+    
     function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
         document.getElementsByClassName("navbar").style.padding = "30px 10px";

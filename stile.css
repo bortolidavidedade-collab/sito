@@ -3,12 +3,31 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.contact_box{
-  display: flex;
-  align-items: center;    
-  gap: 20px;                
-  padding-top: 60px;
-  max-width: 700px;
+
+
+.central_text{
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 580px){ /*Settaggio della parte intera di introduzione per schermi piccoli*/
+  .contact_box{
+    display: flex;
+    align-items: center;    
+    gap: 20px;                
+    padding-top: 100px;
+    max-width: 700px;
+  }    
+}
+
+@media screen and (min-width: 580px){ /*Settaggio della parte intera di introduzione per schermi grandi*/
+  .contact_box{
+    display: flex;
+    align-items: center;    
+    gap: 20px;                
+    padding-top: 60px;
+    max-width: 700px;
+  }    
 }
 
 .download_img{
@@ -16,17 +35,24 @@ body{
   width: 50px;
 }
 
-.profile_img{
-  float: left;
-  height: 300px;
-  width: 300px;
-  border-radius: 20%;
-  margin: 10px;
+@media screen and (min-width: 580px){ /*Settaggio della immagine di profilo per schermi grandi*/
+  .profile_img{
+    float: left;
+    height: 300px;
+    width: 300px;
+    border-radius: 20%;
+    margin: 10px;
+  }
 }
 
-.central_text{
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 580px){ /*Settaggio della immagine di profilo per schermi piccoli*/
+  .profile_img{
+    float: left;
+    height: 30%;
+    width: 30%;
+    border-radius: 20%;
+    margin: 10px;
+  }
 }
 
 .navbar {
@@ -94,4 +120,9 @@ body{
 .cert_section img{
   height: 200px;
   width: 200px;
+}
+
+.cont_section img{
+  height: 100px;
+  width: 100px;
 }
