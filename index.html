@@ -253,7 +253,7 @@
                     </a>
                 </div>
                 <div class='bestr-badge_obidescription'>
-                    <a target='_blank' href='https://bestr.it/award/show/0_sdP3qSTRmj2CgPYNui2A?ln=it'>
+                    <a target='_blank' href='https://bestr.it/award/show/0_sdP3qSTRmj2CgPYNui2A?ln=it' id="laurea_triennale_text">
                         Il o la titolare di questo Badge ha conseguito la Laurea in Ingegneria Informatica presso
                         l'Università degli Studi di Padova. Il corso di laurea in Ingegneria Informatica prepara...
                     </a>
@@ -281,7 +281,7 @@
                     </a>
                 </div>
                 <div class='bestr-badge_obidescription'>
-                    <a target='_blank' href='https://bestr.it/award/show/pTnDtlTHTpGkRr4O_FA1WA?ln=it'>
+                    <a target='_blank' href='https://bestr.it/award/show/pTnDtlTHTpGkRr4O_FA1WA?ln=it' id="cla_inglese_text">
                         The Language Proficiency Badge - English B2 - Reading and Listening certifies the achievement of
                         a level equivalent to B2 as indicated by the CEFR (Common European Framework of Re...
                     </a>
@@ -309,7 +309,7 @@
                     </a>
                 </div>
                 <div class='bestr-badge_obidescription'>
-                    <a target='_blank' href='https://bestr.it/award/show/fqbVYCFCSnmHWxHj-r50pA?ln=it'>
+                    <a target='_blank' href='https://bestr.it/award/show/fqbVYCFCSnmHWxHj-r50pA?ln=it' id="invalsi_italiano_text">
                         Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Italiano e il
                         conseguimento del Livello 4 di apprendimento raggiunto dallo/dalla studente/ssa al termine de...
                     </a>
@@ -337,7 +337,7 @@
                     </a>
                 </div>
                 <div class='bestr-badge_obidescription'>
-                    <a target='_blank' href='https://bestr.it/award/show/LVxhR3BhSvGuYZBRBrNAuA?ln=it'>
+                    <a target='_blank' href='https://bestr.it/award/show/LVxhR3BhSvGuYZBRBrNAuA?ln=it' id="invalsi_matematica_text">
                         Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Matematica e il
                         conseguimento del Livello 5 di apprendimento raggiunto dallo/dalla studente/ssa al termine ...
                     </a>
@@ -365,7 +365,7 @@
                     </a>
                 </div>
                 <div class='bestr-badge_obidescription'>
-                    <a target='_blank' href='https://bestr.it/award/show/Vth4xJ3DQPmr7muqCN-egA?ln=it'>
+                    <a target='_blank' href='https://bestr.it/award/show/Vth4xJ3DQPmr7muqCN-egA?ln=it' id="invalsi_lettura_text">
                         Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Inglese lettura con il
                         conseguimento del Livello B2 del QCER (Quadro comune di riferimento per la conoscenz...
                     </a>
@@ -393,7 +393,7 @@
                     </a>
                 </div>
                 <div class='bestr-badge_obidescription'>
-                    <a target='_blank' href='https://bestr.it/award/show/1EWbQg9URtGJ1KY2ELhSXg?ln=it'>
+                    <a target='_blank' href='https://bestr.it/award/show/1EWbQg9URtGJ1KY2ELhSXg?ln=it' id="invalsi_ascolto_text">
                         Il presente Badge attesta l'avvenuto svolgimento della Prova INVALSI di Inglese ascolto con il
                         conseguimento del livello B2 del QCER (Quadro comune di riferimento per la conoscenz...
                     </a>
@@ -424,6 +424,12 @@
     let IstruzioneText = document.getElementById("Istruzione");
     let CertificazioniText = document.getElementById("Certificazioni");
     let ContattiText = document.getElementById("Contatti");
+    let TriennaleText = document.getElementById("laurea_triennale_text");
+    let ClaIngleseText = document.getElementById("cla_inglese_text");
+    let InvalsiItaText = document.getElementById("invalsi_italiano_text");
+    let InvalsiMateText = document.getElementById("invalsi_matematica_text");
+    let InvalsiLetturaText = document.getElementById("invalsi_lettura_text");
+    let InvalsiAscoltoText = document.getElementById("invalsi_ascolto_text");
 
     window.onscroll = function () { scrollFunction() };
 
@@ -434,6 +440,12 @@
             IstruzioneText.innerHTML = "Istr."
             CertificazioniText.innerHTML = "Cert."
             ContattiText.innerHTML = "Cont."
+            TriennaleText.innerHTML = "Il o la titolare di questo Badge ha conseguito la Laurea in Ingegneria Informatica..."
+            ClaIngleseText.innerHTML = "The Language Proficiency Badge - English B2 - Reading and Listening..."
+            InvalsiItaText.innerHTML = "Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Italiano..."
+            InvalsiMateText.innerHTML = "Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Matematica..."
+            InvalsiLetturaText.innerHTML = "Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Inglese lettura..."
+            InvalsiAscoltoText.innerHTML = "Il presente Badge attesta l'avvenuto svolgimento della Prova INVALSI di Inglese ascolto..."
         }
         else {
             AboutMeText.innerHTML = "About me"
@@ -441,6 +453,12 @@
             IstruzioneText.innerHTML = "Istruzione"
             CertificazioniText.innerHTML = "Certificazioni"
             ContattiText.innerHTML = "Contatti"
+            TriennaleText.innerHTML = "Il o la titolare di questo Badge ha conseguito la Laurea in Ingegneria Informatica presso l'Università degli Studi di Padova. Il corso di laurea in Ingegneria Informatica prepara..."
+            ClaIngleseText.innerHTML = "The Language Proficiency Badge - English B2 - Reading and Listening certifies the achievement of a level equivalent to B2 as indicated by the CEFR (Common European Framework of Re..."
+            InvalsiItaText.innerHTML = "Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Italiano e il conseguimento del Livello 4 di apprendimento raggiunto dallo/dalla studente/ssa al termine de..."
+            InvalsiMateText.innerHTML = "Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Matematica e il conseguimento del Livello 5 di apprendimento raggiunto dallo/dalla studente/ssa al termine ..."
+            InvalsiLetturaText.innerHTML = "Il presente Badge attesta l’avvenuto svolgimento della prova INVALSI di Inglese lettura con il conseguimento del Livello B2 del QCER (Quadro comune di riferimento per la conoscenz..."
+            InvalsiAscoltoText.innerHTML = "Il presente Badge attesta l'avvenuto svolgimento della Prova INVALSI di Inglese ascolto con il conseguimento del livello B2 del QCER (Quadro comune di riferimento per la conoscenz..."
         }
     }
 

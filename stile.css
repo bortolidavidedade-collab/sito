@@ -117,6 +117,7 @@ body {
     display: block;
     text-align: left;
   }
+
 }
 
 .exp_section div {
@@ -137,6 +138,16 @@ body {
   width: 560px;
   height: 125px;
   overflow: hidden;
+}
+
+@media screen and (max-width: 580px) {
+  .bestr-container {
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  
 }
 
 .bestr-badge_imageUrl {
