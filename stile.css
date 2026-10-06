@@ -5,10 +5,27 @@ body {
   line-height: 1.4;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 section {
   background-color: #f9ecdc;
   padding: 10px;
   border-radius: 8px;
+}
+
+.nascosto {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.nascosto.visibile {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .contact_box {
@@ -207,7 +224,7 @@ section {
 
 .bestr-description {
   display: block;
-  font-family: 'Inter' sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 1.3em;
   padding: .75em;

@@ -7,20 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="stile.css">
     <link rel="icon" type="image/x-icon" href="Images/letter-d.png">
     <title>Davide Bortoli</title>
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar nascosto">
         <a href="#About me section" id="About me" class="nav-item">About me</a>
         <a href="#Esperienze section" id="Esperienze" class="nav-item">Esperienze</a>
         <a href="#Istruzione section" id="Istruzione" class="nav-item">Istruzione</a>
         <a href="#Certificazioni section" id="Certificazioni" class="nav-item">Certificazioni</a>
         <a href="#Contatti section" id="Contatti" class="nav-item">Contatti</a>
     </nav>
-    <div class="contact_box">
+    <div class="contact_box nascosto">
         <img src="Images/Immagine profilo.png" alt="Immagine profilo" class="profile_img" title="Immagine profilo">
         <div class="central_text">
             <h1>
@@ -33,7 +36,7 @@
         </div>
     </div>
     <hr>
-    <section id="About me section">
+    <section id="About me section" class="nascosto">
         <h2>About me</h2>
         <p>
             Sono un giovane appassionato di informatica che ama mettersi in gioco e crescere attraverso il lavoro di
@@ -45,7 +48,7 @@
         </p>
         <hr>
     </section>
-    <section id="Esperienze section" class="exp_section">
+    <section id="Esperienze section" class="exp_section nascosto">
         <h2>Esperienze lavorative</h2>
         <h3>
             05/2026 – 09/2026 Aiuto officina e magazzino ERCOLE TEMPO LIBERO
@@ -244,7 +247,7 @@
         </div>
         <hr>
     </section>
-    <section id="Istruzione section" class="istr_section">
+    <section id="Istruzione section" class="istr_section nascosto">
         <h2>Istruzione</h2>
         <h3>2026 - in corso LAUREA MAGISTRALE</h3>
         <div>
@@ -281,7 +284,7 @@
         </div>
         <hr>
     </section>
-    <section id="Certificazioni section" class="cert_section">
+    <section id="Certificazioni section" class="cert_section nascosto">
         <h2>Certificazioni</h2>
 
         <!--BADGE LAUREA TRIENNALE-->
@@ -471,7 +474,7 @@
         <!--BADGE END-->
         <hr>
     </section>
-    <section id="Contatti section" class="cont_section">
+    <section id="Contatti section" class="cont_section nascosto">
         <h2>Contatti</h2>
         <a href="https://linkedin.com/in/davide-bortoli-37a696342">
             <img src="Images/linkedin.png" alt="linkedin" title="collegamento al profilo LinkedIn" id="linkedin">
@@ -550,6 +553,18 @@
         else
             document.getElementsByClassName("navbar").style.padding = "80px";
     }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visibile');
+                observer.unobserve(entry.target); // anima una volta sola
+            }
+        });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.nascosto').forEach((el) => observer.observe(el));
+
 </script>
 
 <!-- Google tag (gtag.js) -->
