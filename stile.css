@@ -25,7 +25,9 @@ section {
 .nascosto.visibile {
   opacity: 1;
   transform: translateY(0);
+  /*transform è un valore che va utilizzato per utilizzare tutte le funzioni geometriche relative agli elementi della pagina*/
   transition: opacity 0.6s ease, transform 0.6s ease;
+  /*In transitiion vado a mettere i valori che cambiano da una classe all'altra nella transition*/
 }
 
 .contact_box {
@@ -153,7 +155,8 @@ section {
   .navbar {
     padding: 20px 10px !important;
     flex-wrap: wrap;
-    justify-content: center;
+    /* La proprietà CSS flex-wrap specifica se gli elementi flessibili all'interno di un contenitore flex devono rimanere su una sola riga o andare a capo su più righe.*/
+    justify-content: left;
     gap: 4px;
     /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
   }
