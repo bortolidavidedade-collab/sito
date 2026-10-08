@@ -220,6 +220,14 @@ section {
     overflow: hidden;
   }
 
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
   .bestr-badge_imageUrl {
     flex-shrink: 0;
   }
