@@ -55,6 +55,12 @@ section {
   align-items: center;
 }
 
+.center_section {
+  display: flex;
+  justify-content: center;
+  background-color: #f9ecdc;
+}
+
 @media screen and (max-width: 580px) {
 
   /*Settaggio della parte intera di introduzione per schermi piccoli*/
@@ -346,6 +352,10 @@ section {
 
   .cont_section img:hover {
     box-shadow: 0 10px 20px rgba(255, 254, 254);
+  }
+
+  .center_section {
+    background-color: #1d1d1d;
   }
 
   .bestr-container {
