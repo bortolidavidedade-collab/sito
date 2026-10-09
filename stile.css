@@ -200,9 +200,12 @@ section {
 }
 
 .bestr-container {
-  display: block;
-  width: 560px;
-  height: 125px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 560px;
+  box-sizing: border-box;
+  height: 150px;
   overflow: hidden;
   padding: 20px;
   border-radius: 8px;
@@ -218,12 +221,8 @@ section {
 
 @media screen and (max-width: 580px) {
   .bestr-container {
-    display: flex;
-    width: auto;
-    padding: 12px;
-    box-sizing: border-box;
     height: auto;
-    overflow: hidden;
+    padding: 20px;
   }
 
   h1 {
@@ -236,6 +235,7 @@ section {
 
   .bestr-badge_imageUrl {
     flex-shrink: 0;
+    float: none;
   }
 
   .bestr-badge_imageUrl_svg {
@@ -262,7 +262,6 @@ section {
 
 .bestr-badge_imageUrl {
   display: block;
-  float: left;
 }
 
 .bestr-badge_imageUrl a {
@@ -281,11 +280,19 @@ section {
 
 .bestr-description {
   display: block;
+  min-width: 0;
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   line-height: 1.3em;
   padding: .75em;
   overflow: hidden;
+}
+
+.cert_section {
+  width: 100%;
+  max-width: 580px;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .bestr-badge_name {
@@ -306,7 +313,12 @@ section {
 }
 
 .bestr-badge_obidescription {
-  display: block;
+  max-height: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* massimo 3 righe, poi "..." */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   max-height: 3.9em;
 }
 
